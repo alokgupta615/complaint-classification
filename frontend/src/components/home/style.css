@@ -1,4 +1,18 @@
+/* .nav--{
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  border-radius: 12px;
+  padding: 60px 40px;
+}
+.nav-- h1 {
+  font-weight: 700;
+  font-size: 48px;
+}
 
+.nav-- p {
+  font-size: 18px;
+  opacity: 0.9;
+}
 .padding-left {
   padding-left: 3rem;
 }
@@ -8,7 +22,6 @@
 .hh {
   background: url("../../assets/background.png") no-repeat center;
   background-size: contain;
-  /* margin-left: 80px; */
   padding-left: 50px;
   height: 50vh;
   width: 100%;
@@ -16,4 +29,62 @@
 .image{
   height: 50vh;
   width: 100%;
+} */
+
+
+.nav-- {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  border-radius: 16px;
+  padding: 80px 60px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.nav-- h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.nav-- p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 500px;
+}
+
+.image {
+  max-height: 450px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.nav-- .btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 10px 0;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.nav-- .btn-outline-light:hover {
+  background-color: white;
+  color: #1e3a8a;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+  .nav-- {
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .nav-- h1 {
+    font-size: 32px;
+  }
+
+  .nav-- p {
+    font-size: 16px;
+    margin: auto;
+  }
 }

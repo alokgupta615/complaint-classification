@@ -13,7 +13,7 @@ function Footer() {
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-light text-decoration-none">
+                <a href="" className="text-light text-decoration-none">
                   Home
                 </a>
               </li>
