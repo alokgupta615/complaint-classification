@@ -1,72 +1,55 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useTranslation } from "react-i18next";
 
 const About01 = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="container my-5" style={{ minHeight: "70vh" }}>
       <div className="text-center mb-4">
-        <h1 className="fw-bold">About SmartSamadhan</h1>
-        <p className="text-muted">
-          Smart Municipal Complaint Classification & Management System
-        </p>
+        <h1 className="fw-bold">{t("aboutTitle")}</h1>
+        <p className="text-muted">{t("aboutSubtitle")}</p>
       </div>
 
       <div className="card shadow p-4">
         {/* Introduction */}
-        <p>
-          SmartSamadhan is an intelligent municipal complaint classification and
-          management system designed to simplify and accelerate the grievance
-          redressal process. The platform empowers citizens to report civic
-          issues quickly and efficiently while ensuring timely resolution by the
-          concerned municipal departments.
-        </p>
-
-        <p>
-          The system supports complaints related to sanitation, water supply,
-          road damage, street lighting, waste management, drainage problems, and
-          other public infrastructure concerns.
-        </p>
+        <p>{t("intro1")}</p>
+        <p>{t("intro2")}</p>
 
         <hr />
 
         {/* Key Features */}
-        <h4 className="mt-3">Key Features</h4>
+        <h4 className="mt-3">{t("keyFeatures")}</h4>
         <ul>
-          <li>Easy and user-friendly complaint registration</li>
-          <li>Automatic complaint categorization using smart logic</li>
-          <li>Real-time complaint tracking with status updates</li>
-          <li>Department-wise complaint routing</li>
-          <li>Transparent and accountable grievance handling</li>
-          <li>Secure and responsive web-based interface</li>
+          <li>{t("feature1")}</li>
+          <li>{t("feature2")}</li>
+          <li>{t("feature3")}</li>
+          <li>{t("feature4")}</li>
+          <li>{t("feature5")}</li>
+          <li>{t("feature6")}</li>
         </ul>
 
         <hr />
 
         {/* How It Works */}
-        <h4 className="mt-3">How It Works</h4>
+        <h4 className="mt-3">{t("howItWorks")}</h4>
         <ol>
-          <li>Citizens submit complaints through the online portal.</li>
-          <li>The system automatically classifies the complaint.</li>
-          <li>The complaint is routed to the appropriate department.</li>
-          <li>Authorities update the status after review and resolution.</li>
-          <li>Citizens can track progress in real-time.</li>
+          <li>{t("step1")}</li>
+          <li>{t("step2")}</li>
+          <li>{t("step3")}</li>
+          <li>{t("step4")}</li>
+          <li>{t("step5")}</li>
         </ol>
 
         <hr />
 
         {/* Mission & Vision */}
-        <h4 className="mt-3">Our Mission</h4>
-        <p>
-          To enhance communication between citizens and municipal authorities by
-          providing a transparent, efficient, and technology-driven grievance
-          redressal platform.
-        </p>
+        <h4 className="mt-3">{t("mission")}</h4>
+        <p>{t("missionText")}</p>
 
-        <h4 className="mt-3">Our Vision</h4>
-        <p>
-          To build smarter cities by leveraging digital innovation for improved
-          public service delivery and urban governance.
-        </p>
+        <h4 className="mt-3">{t("vision")}</h4>
+        <p>{t("visionText")}</p>
       </div>
     </div>
   );
