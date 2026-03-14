@@ -7,33 +7,43 @@ const About01 = () => {
 
   return (
     <div className="container my-5" style={{ minHeight: "70vh" }}>
-      <div className="text-center mb-4">
+      {/* Heading */}
+      <div className="text-center mb-5">
         <h1 className="fw-bold">{t("aboutTitle")}</h1>
         <p className="text-muted">{t("aboutSubtitle")}</p>
       </div>
 
-      <div className="card shadow p-4">
-        {/* Introduction */}
+      {/* Intro Section */}
+      <div className="card shadow-sm p-4 mb-4">
         <p>{t("intro1")}</p>
         <p>{t("intro2")}</p>
+      </div>
 
-        <hr />
+      {/* Key Features */}
+      <div className="card shadow-sm p-4 mb-4">
+        <h4 className="mb-3">{t("keyFeatures")}</h4>
+        <div className="row">
+          <div className="col-md-6">
+            <ul>
+              <li>{t("feature1")}</li>
+              <li>{t("feature2")}</li>
+              <li>{t("feature3")}</li>
+            </ul>
+          </div>
 
-        {/* Key Features */}
-        <h4 className="mt-3">{t("keyFeatures")}</h4>
-        <ul>
-          <li>{t("feature1")}</li>
-          <li>{t("feature2")}</li>
-          <li>{t("feature3")}</li>
-          <li>{t("feature4")}</li>
-          <li>{t("feature5")}</li>
-          <li>{t("feature6")}</li>
-        </ul>
+          <div className="col-md-6">
+            <ul>
+              <li>{t("feature4")}</li>
+              <li>{t("feature5")}</li>
+              <li>{t("feature6")}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-        <hr />
-
-        {/* How It Works */}
-        <h4 className="mt-3">{t("howItWorks")}</h4>
+      {/* How It Works */}
+      <div className="card shadow-sm p-4 mb-4">
+        <h4 className="mb-3">{t("howItWorks")}</h4>
         <ol>
           <li>{t("step1")}</li>
           <li>{t("step2")}</li>
@@ -41,15 +51,23 @@ const About01 = () => {
           <li>{t("step4")}</li>
           <li>{t("step5")}</li>
         </ol>
+      </div>
 
-        <hr />
+      {/* Mission & Vision */}
+      <div className="row">
+        <div className="col-md-6 mb-3">
+          <div className="card shadow-sm p-4 h-100">
+            <h4>{t("mission")}</h4>
+            <p>{t("missionText")}</p>
+          </div>
+        </div>
 
-        {/* Mission & Vision */}
-        <h4 className="mt-3">{t("mission")}</h4>
-        <p>{t("missionText")}</p>
-
-        <h4 className="mt-3">{t("vision")}</h4>
-        <p>{t("visionText")}</p>
+        <div className="col-md-6 mb-3">
+          <div className="card shadow-sm p-4 h-100">
+            <h4>{t("vision")}</h4>
+            <p>{t("visionText")}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

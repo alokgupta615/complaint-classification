@@ -74,6 +74,20 @@ i18n.use(initReactI18next).init({
         services: "Services",
         followUs: "Follow Us",
         rights: "All rights reserved.",
+
+        // Contact Page
+        contactTitle: "Contact Us",
+        contactSubtitle:
+          "If you have any questions or need assistance regarding your complaint, feel free to contact our support team.",
+        contactInfo: "Contact Information",
+        email: "Email",
+        phone: "Phone",
+        address: "Address",
+        sendMessage: "Send us a Message",
+        name: "Your Name",
+        message: "Your Message",
+        sendBtn: "Send Message",
+        officeAddress: "Municipal Services Office, Lucknow, Uttar Pradesh",
       },
     },
 
@@ -145,6 +159,20 @@ i18n.use(initReactI18next).init({
         services: "सेवाएं",
         followUs: "हमें फॉलो करें",
         rights: "सर्वाधिकार सुरक्षित।",
+
+        // Contact Page
+        contactTitle: "संपर्क करें",
+        contactSubtitle:
+          "यदि आपको शिकायत दर्ज करने या उसकी स्थिति जानने में कोई समस्या हो, तो आप हमारी सहायता टीम से संपर्क कर सकते हैं।",
+        contactInfo: "संपर्क जानकारी",
+        email: "ईमेल",
+        phone: "फोन",
+        address: "पता",
+        sendMessage: "हमें संदेश भेजें",
+        name: "आपका नाम",
+        message: "आपका संदेश",
+        sendBtn: "संदेश भेजें",
+        officeAddress: "नगर सेवा कार्यालय, लखनऊ, उत्तर प्रदेश",
       },
     },
   },
