@@ -109,6 +109,8 @@ i18n.use(initReactI18next).init({
 
         // Form
         lodgeTitle: "शिकायत दर्ज करें",
+        name: "नाम",
+        email: "ईमेल",
         complaintTitle: "शिकायत शीर्षक",
         complaintDescription: "शिकायत विवरण",
         complaintType: "शिकायत प्रकार",

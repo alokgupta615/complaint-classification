@@ -14,6 +14,18 @@ export default function Form() {
           <div className="col-md-2"></div>
 
           <div className="col-md-4 mb-3">
+            <label className="form-label">{t("name")}</label>
+            <input
+              type="text"
+              className="form-control mb-3"
+              placeholder={t("name")}
+            />
+            <label className="form-label">{t("email")}</label>
+            <input
+              type="email"
+              className="form-control mb-3"
+              placeholder={t("email")}
+            />
             <label className="form-label">{t("complaintTitle")}</label>
             <input
               type="text"
